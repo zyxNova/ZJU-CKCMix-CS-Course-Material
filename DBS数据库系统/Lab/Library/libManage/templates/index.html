@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<p>{{ books|length }} Titles</p>
+<form method="post" class="book-form">
+    Title <input  type="text" name="title" autocomplete="off">
+    Author <input type="text" name="author" autocomplete="off">
+    Price <input  type="text" name="price_low" autocomplete="off">
+    ~ <input type="text" name="price_high" autocomplete="off">
+    <input style="width:10px"type="radio" name="stock" value="0" checked>All
+    <input style="width:10px"type="radio" name="stock" value="1">Have Stock  &nbsp;
+    Press <input type="text" name="press" autocomplete="off">
+    Year <input type="text" name="year_start" autocomplete="off">
+    ~<input type="text" name="year_end" autocomplete="off">
+    Type<input type="text" name="type" autocomplete="off">
+    <input class="btn" type="submit" name="submit" value="Search">
+</form>
+<ul class="book-list">
+    <table>
+        <thead><th>Book ID
+            <div class="click">
+                <span class="top" onclick="window.location.href='{{ url_for('index', sort_by='id') }}'"></span>
+                <span class="bottom" onclick="window.location.href='{{ url_for('index', sort_by='id', sort_way='desc') }}'"></span>
+            </div>
+        </th>
+            <th colspan="2">Title
+                <div class="click">
+                <span class="top" onclick="window.location.href='{{ url_for('index', sort_by='title') }}'"></span>
+                <span class="bottom" onclick="window.location.href='{{ url_for('index', sort_by='title', sort_way='desc') }}'"></span>
+                </div></th>
+            <th>Author
+                <div class="click">
+                    <span class="top" onclick="window.location.href='{{ url_for('index', sort_by='author') }}'"></span>
+                    <span class="bottom" onclick="window.location.href='{{ url_for('index', sort_by='author', sort_way='desc') }}'"></span>
+                </div>
+            </th>
+            <th>Price
+                <div class="click">
+                    <span class="top" onclick="window.location.href='{{ url_for('index', sort_by='price') }}'"></span>
+                    <span class="bottom" onclick="window.location.href='{{ url_for('index', sort_by='price', sort_way='desc') }}'"></span>
+                </div>
+            </th>
+            <th>Total
+                <div class="click">
+                    <span class="top" onclick="window.location.href='{{ url_for('index', sort_by='total') }}'"></span>
+                    <span class="bottom" onclick="window.location.href='{{ url_for('index', sort_by='total', sort_way='desc') }}'"></span>
+                </div>
+            </th>
+            <th>Stock
+                <div class="click">
+                    <span class="top" onclick="window.location.href='{{ url_for('index', sort_by='stock') }}'"></span>
+                    <span class="bottom" onclick="window.location.href='{{ url_for('index', sort_by='stock', sort_way='desc') }}'"></span>
+                </div>
+            </th>
+            <th>Press
+                <div class="click">
+                    <span class="top" onclick="window.location.href='{{ url_for('index', sort_by='press') }}'"></span>
+                    <span class="bottom" onclick="window.location.href='{{ url_for('index', sort_by='press', sort_way='desc') }}'"></span>
+                </div>
+            </th>
+            <th>Year
+                <div class="click">
+                    <span class="top" onclick="window.location.href='{{ url_for('index', sort_by='year') }}'"></span>
+                    <span class="bottom" onclick="window.location.href='{{ url_for('index', sort_by='year', sort_way='desc') }}'"></span>
+                </div>
+            </th>
+            <th>Type
+                <div class="click">
+                    <span class="top" onclick="window.location.href='{{ url_for('index', sort_by='type') }}'"></span>
+                    <span class="bottom" onclick="window.location.href='{{ url_for('index', sort_by='type', sort_way='desc') }}'"></span>
+                </div>
+            </th>
+        </thead>
+        <tbody>
+            {% set sort_on = request.args.sort_on|default('book_id') %}
+            {% for book in books|sort(attribute=sort_on) %}
+            <tr>
+                <td>{{book.id}}</td>
+                <td colspan="2">{{book.title}}</td>
+                <td>{{book.author}}</td>
+                <td>{{book.price}}</td>
+                <td>{{book.total}}</td>
+                <td>{{book.stock}}</td>
+                <td>{{book.press}}</td>
+                <td>{{book.year}}</td>
+                <td>{{book.type}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</ul>
+{% endblock %}

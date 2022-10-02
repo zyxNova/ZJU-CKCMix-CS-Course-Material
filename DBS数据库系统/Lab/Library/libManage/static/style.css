@@ -1,0 +1,212 @@
+/* 页面整体 */
+body {
+    margin: auto;
+    max-width: 1080px;
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.avatar {
+    width: 40px;
+}
+
+.book-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.book-list th {
+    height: 45px;
+    width: -webkit-calc(100%/24);
+    text-align: center;
+    line-height: 45px;
+}
+thead {
+    background-color: #C7DB84;
+}
+.book-list td {
+    text-align: center;
+    padding: 12px 24px;
+    border-bottom: 1px solid #ddd;
+}
+
+.book-list tr:last-child {
+    border-bottom:none;
+}
+
+.book-list tbody tr:hover {
+    background-color: #f8f9fa;
+}
+.card-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.card-list td {
+    text-align: center;
+    padding: 12px 24px;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-list td:last-child {
+    border-bottom:none;
+}
+
+.card-list tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.card-list th {
+    height: 45px;
+    width: -webkit-calc(100%/10);
+    text-align: center;
+}
+
+.borrow-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.borrow-list th {
+    height: 45px;
+    width: -webkit-calc(100%/14);
+    text-align: center;
+}
+.borrow-list td {
+    text-align: center;
+    padding: 12px 24px;
+    border-bottom: 1px solid #ddd;
+}
+
+.borrow-list tr:last-child {
+    border-bottom:none;
+}
+
+.borrow-list tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.rabbit {
+    display: block;
+    margin: 0 auto;
+    height: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+.float-right {
+    float: right;
+}
+
+/* 覆盖某些浏览器对 input 元素定义的字体 */
+input[type=submit] {
+    font-family: inherit;
+}
+
+input[type=text] {
+    border: 1px solid #ddd;
+}
+
+input[name=year] {
+    width: 50px;
+}
+
+.btn {
+    font-size: 14px;
+    padding: 3px 5px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 1px solid #555555;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.alert {
+    position: relative;
+    padding: 7px;
+    margin: 7px 0;
+    border: 1px solid transparent;
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+    border-radius: 5px;
+}
+
+.inline-form {
+    display: inline;
+}
+
+.click {
+    width: 1px;
+    height: 40px;
+    display: table-cell;
+    position: relative;
+    float: right;
+}
+
+.top {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6px 7px;
+    border-color: transparent transparent #999999;
+    position: absolute;
+    transform: rotate(180deg);
+    top: 24px;
+    bottom: 14px;
+    right: 5px;
+}
+.top:hover {
+    cursor: pointer;
+    border-color: transparent transparent #333333;
+}
+
+.bottom {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6px 7px;
+    border-color: transparent transparent #999999;
+    position: absolute;
+    top: 15px;
+    right: 5px;
+}
+.bottom:hover {
+    cursor: pointer;
+    border-color: transparent transparent #333333;
+}
+
+
+.book-form input{
+    width: -webkit-calc(100%/16);
+}

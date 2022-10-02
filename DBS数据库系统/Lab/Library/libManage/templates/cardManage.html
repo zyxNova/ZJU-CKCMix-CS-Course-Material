@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<p>{{ cards|length }} Titles</p>
+{% if current_user.is_authenticated %}
+<form method="post">
+    CardID <input style="width:100px" type="text" name="id" autocomplete="off">
+    Name <input style="width:100px" type="text" name="name" autocomplete="off">
+    Department <input style="width:70px" type="text" name="dept" autocomplete="off">
+    <input class="btn" type="submit" name="submit" value="Add">
+</form>
+{% endif %}
+<ul class="card-list">
+    <table>
+        <thead><th>Card ID</th><th>Name</th><th>Department</th><th>Update Time</th><th>Option</th></thead>
+        <tbody>
+            {% for card in cards %}
+            <tr>
+                <td>{{card.id}}</td>
+                <td>{{card.name}}</td>
+                <td>{{card.dept}}</td>
+                <td>{{card.update_time.strftime('%Y-%m-%d')}}</td>
+                <td><a class="btn" href="{{ url_for('edit', card_id=card.id) }}">Edit</a>
+                    <form class="inline-form" method="get" action="{{ url_for('delete', card_id=card.id) }}">
+                        <input class="btn" type="submit" name="delete" value="Delete" onclick="confirm('Are you sure?')">
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</ul>
+{% endblock %}
