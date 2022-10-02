@@ -1,0 +1,20 @@
+<!--components/musicPlayer/musicPlayer.wxml-->
+<!-- <text>components/musicPlayer/musicPlayer.wxml</text> -->
+<!-- <view>
+    <audio id="myAudio" class="player" poster="{{song.poster}}" 
+    name="{{song.name}}" author="{{song.author}}" src="{{song.src}}" controls loop></audio>
+</view> -->
+
+<view class="player" bindtap="handleMusic">
+    <view class="p-left">
+        <image class="{{playState == 1?'music-pic playing':'music-pic paused'}}" src="{{musicPic}}" mode="aspectFit"></image>
+        <view class="music-info">
+            <text class="music-name">{{musicName}}</text>
+            <text class="music-artist">{{artistName}}</text>
+        </view>
+    </view>
+    <view class="p-right">
+        <image src="{{playState == 1?'/images/pause.png':'/images/play.png'}}"
+        mode="aspectFit"></image>
+    </view>
+</view>

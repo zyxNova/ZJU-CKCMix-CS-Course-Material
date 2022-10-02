@@ -1,0 +1,15 @@
+<!--components/songItem/songItem.wxml-->
+<!-- <text>components/songItem/songItem.wxml</text> -->
+<view class='list-item' bindtap='handleClick' data-id="{{item.id}}">
+    <view class='profile'>
+        <image class='banner' src="{{item.poster}}" mode='aspectFit'></image>
+    </view>
+
+    <view class='content'>
+        <text class='name'>{{item.name}}</text>
+        <view class='artist'>
+            {{singer}}
+        </view>
+    </view>
+    <image class='favor' catchtap="handleFavor" src="{{favor == true?'/images/favor_true.png':'/images/favor_false.png'}}"></image>
+</view>

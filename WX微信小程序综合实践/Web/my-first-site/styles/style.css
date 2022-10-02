@@ -1,0 +1,114 @@
+html {
+  /* px 表示 “像素（pixels）”: 基础字号为 10 像素 */
+  font-size: 10px;
+  /* Google fonts 输出的 CSS */
+  background-color: #99CCFF;
+}
+body {
+  margin: 0 auto;
+  width: 80%;
+  min-width: 800px;
+  background-color: #f1f1f1;
+}
+
+.my-image {
+  padding-top:20px;
+  height: 400px;
+  display: block;
+  margin:30 auto;
+}
+h1 ,h2{
+  
+  color: #336699;
+  margin: auto;
+  padding: 20px 0;
+}
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+h2{
+  font-size: 18px;
+}
+p,
+li {
+  font-size: 16px;
+  /* line-height 后而可以跟不同的参数，如果是数字，就是当前字体大小乘上数字 */
+  line-height: 2;
+  letter-spacing: 1px;
+  text-shadow: #ccccff;
+}
+
+header {
+  margin-bottom: 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+header img {
+  display: block;
+  height: 100px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+}
+
+nav {
+  height: 50px;
+  flex: 100%;
+  display: flex;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+nav a,
+nav span {
+  display: inline-block;
+  font-size: 2rem;
+  height: 3rem;
+  line-height: 1.7;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #336699;
+}
+
+main {
+  display: flex;
+}
+
+article,
+section {
+  min-width: 55%;
+  flex: 4;
+  padding-left: 30px;
+}
+aside {
+  flex: 50;
+  padding: 1%;
+}
+
+aside a {
+  display: block;
+  width: 100%;
+
+}
+
+aside img {
+  max-width: 100%;
+}
+footer {
+  margin-top: 10px;
+  margin-left: 40px;
+  color:#CCCCCC;
+}

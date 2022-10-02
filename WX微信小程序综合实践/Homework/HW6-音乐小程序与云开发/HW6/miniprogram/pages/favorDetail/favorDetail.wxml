@@ -1,0 +1,7 @@
+<!--pages/favorDetail/favorDetail.wxml-->
+<view style="padding-bottom: 20px"></view>
+<view class='detail-wrap'>
+        <view wx:for='{{dataSource}}' wx:for-item="item" wx:for-index="index" wx:key="index">
+            <songItem item="{{item}}" singer="{{singer}}" />
+        </view>
+</view>

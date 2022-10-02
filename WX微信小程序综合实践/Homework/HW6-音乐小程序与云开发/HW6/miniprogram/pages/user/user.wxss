@@ -1,0 +1,22 @@
+/* pages/user/user.wxss */
+page {
+    background-color: #6B9297;
+    width:700rpx;
+    margin:0 auto;
+    padding-top: 10rpx;
+    padding-bottom: 110rpx;
+}
+
+/* .latest {
+    padding-top: 20rpx;
+} */
+
+.late-content {
+    width: 350rpx;
+    height: 350rpx;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30rpx;
+}

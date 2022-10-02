@@ -1,0 +1,22 @@
+/* pages/broadcast/broadcast.wxss */
+.page {
+    background-color: #fafafa;
+    width:700rpx;
+    margin:0 auto;
+    padding-top: 40rpx;
+    padding-bottom: 110rpx;
+}
+
+.page::after {
+    display: block;
+    clear: both;
+}
+
+.content {
+    width: 350rpx;
+    height: 350rpx;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

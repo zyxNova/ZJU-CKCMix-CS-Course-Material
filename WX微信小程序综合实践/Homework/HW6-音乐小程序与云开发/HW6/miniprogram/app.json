@@ -1,0 +1,39 @@
+{
+    "pages": [
+        "pages/hot/hot",
+        "pages/broadcast/broadcast",
+        "pages/user/user",
+        "pages/hotDetail/hotDetail",
+        "pages/broadDetail/broadDetail",
+        "pages/favorDetail/favorDetail"
+    ],
+    "tabBar": {
+        "color": "#7A7E83",
+        "selectedColor": "#6B9297",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "position": "top",
+        "list": [
+            {
+                "pagePath": "pages/hot/hot",
+                "text": "热歌推荐"
+            },
+            {
+                "pagePath": "pages/broadcast/broadcast",
+                "text": "精选电台"
+            },
+            {
+                "pagePath": "pages/user/user",
+                "text": "个人中心"
+            }
+        ]
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "MusicStart!",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

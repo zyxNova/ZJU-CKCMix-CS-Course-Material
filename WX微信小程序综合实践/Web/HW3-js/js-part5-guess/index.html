@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuessNumber</title>
+    <link href="styles/style.css" rel="stylesheet"
+</head>
+<body>
+    <h1>猜数字游戏</h1>
+    <p>我刚才随机选定了一个100以内的自然数。看你能否在10次以内猜中它。
+        <br>每次我都会告诉你所猜的结果是高了还是低了</p>
+    <div class="form">
+        <label for="guessField">请猜数：</label>
+        <input type="text" id="guessField" >
+        <input type="submit" value="确定" id="guessSubmit" onclick="guess()">
+        <input type="submit" value="重置" id="resetSubmit" onclick="resetGame()">
+    </div>
+    <div class="result">
+        <p id="guesses"></p>
+        <p id="lastResult"></p>
+        <p id="lowOrHigh"></p>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

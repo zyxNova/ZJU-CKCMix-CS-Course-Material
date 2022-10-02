@@ -1,0 +1,14 @@
+<!--pages/broadDetail/broadDetail.wxml-->
+<!-- <text>pages/broadDetail/broadDetail.wxml</text> -->
+<view class='music-detail'>
+    <view class='detail-banner' style="background-color: {{color}};">
+        <image src="{{thumb}}" mode="aspectFill"></image>
+        
+    </view>
+    <view class='detail-wrap'>
+        <view wx:for='{{dataSource}}' wx:for-item="item" wx:for-index="index" wx:key="index">
+            <songItem item="{{item}}" singer="{{name}}" />
+        </view>
+    </view>
+</view>
+<musicPlayer id="player2"/>

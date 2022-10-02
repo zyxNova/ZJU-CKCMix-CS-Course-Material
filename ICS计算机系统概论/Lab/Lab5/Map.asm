@@ -1,0 +1,24 @@
+.ORIG       x4000
+                .FILL #1
+                .FILL #20
+                .FILL #130 
+                .FILl #91
+                .fill #15 
+                .fill #72 
+                .fill #161 
+                .fill #41 
+                .fill #10 
+                .fill #137
+                .fill #198 
+                .fill #41
+                .fill #94
+                .fill #180
+                .fill #126
+                .fill #196
+                .fill #10
+                .fill #188
+                .fill #159
+                .fill #5
+                .fill #184
+                .fill #14
+                .END

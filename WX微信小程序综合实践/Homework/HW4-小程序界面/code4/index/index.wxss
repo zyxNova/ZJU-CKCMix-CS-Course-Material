@@ -1,0 +1,9 @@
+.intro {
+  margin: 30px;
+  text-align: center;
+}
+
+button{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}

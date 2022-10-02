@@ -1,0 +1,4 @@
+/* pages/hot/hot.wxss */
+page {
+    background-color:#6B9297;
+}

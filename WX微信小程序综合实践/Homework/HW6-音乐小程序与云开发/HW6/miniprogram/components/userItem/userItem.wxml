@@ -1,0 +1,5 @@
+<!--components/userItem/userItem.wxml-->
+<!-- <text>components/userItem/userItem.wxml</text> -->
+<view class="user-item" bindtap="checkFavor">
+    <text class="user-text">{{item.title}}</text>
+</view>

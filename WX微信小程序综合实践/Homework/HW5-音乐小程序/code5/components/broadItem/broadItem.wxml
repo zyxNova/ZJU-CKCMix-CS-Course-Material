@@ -1,0 +1,5 @@
+<!--components/broadItem/broadItem.wxml-->
+<!-- <text>components/broadItem/broadItem.wxml</text> -->
+<view class="broad-item" style="background-image: url('{{item.thumb}}');">
+    <text class="broad-text">{{item.name}}</text>
+</view>

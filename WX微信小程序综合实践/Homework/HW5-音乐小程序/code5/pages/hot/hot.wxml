@@ -1,0 +1,7 @@
+<!--pages/hot/hot.wxml-->
+<view style="padding-bottom: 20px"></view>
+<view class="music-hot">
+    <view wx:for="{{musics}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+        <itemCard item="{{item}}"/>
+    </view>
+</view>

@@ -1,0 +1,196 @@
+                .ORIG       x3000
+; Main program to set start position, call the recursive subroutine, and store the result
+                LD          R0, MapBase             ; R0 holds the current cell address
+                LD          R6, UserStack
+                AND         R5, R5, #0
+                LEA         R4, Memorize
+                AND         R7, R7, #0
+                LDI         R1, MapRow
+                LDI         R3, MapColumn
+                NOT         R3, R3
+                ADD         R3, R3, #1
+                ST          R3, NegColumn
+                
+                ; Calculate the total number of cells
+MulLoop         BRz         EndMulti
+                ADD         R5, R5, R1
+                STR         R7, R4, #0              ; Clear the memorize map
+                ADD         R4, R4, #1
+                ADD         R3, R3, #1
+                BR          MulLoop
+EndMulti        ST          R5, MapSize             ; Noting: ST cannot change CC
+                LEA         R3, Memorize            ; R3 holds the pointer of memorized map
+                ADD         R5, R5, #0              ; R5 holds the total number of cells, counter
+                
+                ; Iterate the map, set the start position
+SkiiLoop        BRz         EndSkii
+                AND         R2, R2, #0              ; R2 holds the pedometer
+                ADD         R2, R2, #1              ; reset pedometer to 1 (because we have gone 1 step)
+                ST          R2, CurLength
+                ADD         R4, R0, #0              ; R4 holds the current cell address
+                LDR         R1, R0, #0              ; R1 holds the current cell height
+                JSR         Skiing
+                LD          R2, CurLength
+                STR         R2, R3, #0              ; record the longest distance of the current cell
+                LD          R1, MapSize
+                NOT         R1, R1
+                ADD         R1, R1, #1
+                ADD         R2, R1, R2
+                BRz         EndSkii
+                ADD         R3, R3, #1
+                ADD         R0, R0, #1      
+                ADD         R5, R5, #-1
+                BR          SkiiLoop
+                ; Store the longest distance
+EndSkii         LD          R2, Longest
+                HALT
+                
+MapRow          .FILL       x4000                   
+MapColumn       .FILL       x4001
+MapBase         .FILL       x4002                   ; the start address containing the map data
+NegBase         .FILL       xBFFE                   ; -x4002
+Memorize        .BLKW       #50
+CurLength       .BLKW       #1
+MapSize         .BLKW       #1
+NegColumn       .BLKW       #1
+Longest         .FILL       #0                      ; Global to store the longest distance
+UserStack       .FILL       xFE00
+
+; Recursive Subroutine to find the longest distance when skiing
+; input: R0, the current cell address
+; output: Global, the current longest distance
+
+                ; save modified registers into the stack
+Skiing          ADD         R6, R6, #-1
+                STR         R1, R6, #0              ; R1 holds the cell height of caller
+                ADD         R6, R6, #-1
+                STR         R2, R6, #0              ; R2 holds the Pedometer
+                ADD         R6, R6, #-1
+                STR         R3, R6, #0              ; R3 holds the pointer of memorized map
+                ADD         R6, R6, #-1
+                STR         R4, R6, #0              ; R4 holds the cell address of caller
+                ADD         R6, R6, #-1
+                STR         R5, R6, #0              ; R5 holds the main program iterative counter
+                ADD         R6, R6, #-1
+                STR         R7, R6, #0              ; R7 holds the PC of caller
+                ; update current cell information
+                
+                LDR         R1, R0, #0              ; R1 now holds the current cell height
+                ;
+VISITED         LD          R7, NegBase
+                ADD         R7, R7, R0 
+                LEA         R3, Memorize
+                ADD         R3, R3, R7
+                LDR         R7, R3, #0
+                BRnz        CHECK_NORTH
+                ADD         R2, R2, R7
+                ADD         R2, R2, #-1
+                BR          CmpDistance
+                ;
+CHECK_NORTH     ADD         R4, R0, #0              ; R4 now holds the current cell address
+                LD          R3, NegColumn
+                ADD         R3, R0, R3
+                LD          R7, NegBase
+                ADD         R7, R7, R3
+                BRn         CHECK_SOUTH             ; edge check, cannot go north: R0-MapBase-Column<0
+                LDR         R5, R3, #0
+                NOT         R5, R5
+                ADD         R5, R5, #1
+                ADD         R5, R5, R1
+                BRnz        CHECK_SOUTH             ; height check, cannot go north: R1 - mem[R0-column] <= 0
+                ADD         R0, R3, #0
+                ADD         R2, R2, #1
+                JSR         Skiing                  
+                ADD         R0, R4, #0              
+                ADD         R2, R2, #-1             ; restore the current address and pedometer
+                ;
+CHECK_SOUTH     LDI         R3, MapColumn
+                ADD         R3, R0, R3
+                LD          R7, MapBase
+                LD          R5, MapSize
+                ADD         R7, R7, R5
+                NOT         R7, R7
+                ADD         R7, R7, #1
+                ADD         R7, R7, R3
+                BRzp        CHECK_WEST              ; edge check, cannot go south: R0+Column >= MapBase+MapSize
+                LDR         R5, R3, #0
+                NOT         R5, R5
+                ADD         R5, R5, #1
+                ADD         R5, R5, R1
+                BRnz        CHECK_WEST              ; height check, cannot go south: mem[R0+column] >= R1
+                ADD         R0, R3, #0
+                ADD         R2, R2, #1
+                JSR         Skiing
+                ADD         R0, R4, #0              ; restore the current address and pedometer
+                ADD         R2, R2, #-1
+                ;
+CHECK_WEST      LD          R3, NegColumn
+                LD          R7, NegBase
+                ADD         R7, R7, R0
+Sub1Loop        BRn         EndSub1
+                ADD         R7, R7, R3
+                BR          Sub1Loop
+EndSub1         LDI         R3, MapColumn
+                ADD         R7, R7, R3
+                BRz         CHECK_EAST              ; edge check, cannot go west: R0 = MapBase+n*Column
+                LDR         R5, R0, #-1
+                NOT         R5, R5
+                ADD         R5, R5, #1
+                ADD         R5, R5, R1
+                BRnz        CHECK_EAST              ; height check, cannot go west: mem[R0-1] >= R1
+                ADD         R0, R0, #-1
+                ADD         R2, R2, #1
+                JSR         Skiing
+                ADD         R0, R4, #0              ; restore the current address and pedometer
+                ADD         R2, R2, #-1
+                ;
+CHECK_EAST      LD          R3, NegColumn
+                LD          R7, NegBase
+                ADD         R7, R7, R0
+                ADD         R7, R7, #1
+Sub2Loop        BRn         EndSub2
+                ADD         R7, R7, R3
+                BR          Sub2Loop
+EndSub2         LDI         R3, MapColumn
+                ADD         R7, R7, R3
+                BRz         CmpDistance             ; edge check, cannot go east: R0 = MapBase+n*Column-1
+                LDR         R5, R0, #1
+                NOT         R5, R5
+                ADD         R5, R5, #1
+                ADD         R5, R5, R1
+                BRnz        CmpDistance             ; height check, cannot go east: mem[R0+1] >= R1
+                ADD         R0, R0, #1
+                ADD         R2, R2, #1
+                JSR         Skiing
+                ADD         R0, R4, #0              ; restore the current address and pedometer
+                ADD         R2, R2, #-1
+                ; arrive at the lowest cell, compare the current pedometer with the longest distance
+                ; if the current pedometer is larger, than update the longest
+CmpDistance     LD          R3, CurLength
+                NOT         R3, R3
+                ADD         R3, R3, #1
+                ADD         R3, R3, R2              
+                BRnz        CmpLongest
+                ST          R2, CurLength
+CmpLongest      LD          R3, Longest
+                NOT         R3, R3
+                ADD         R3, R3, #1
+                ADD         R3, R3, R2              
+                BRnz        RESTORE
+                ST          R2, Longest
+                ;
+RESTORE         ADD         R0, R4, #0
+                LDR         R7, R6, #0
+                ADD         R6, R6, #1
+                LDR         R5, R6, #0
+                ADD         R6, R6, #1
+                LDR         R4, R6, #0
+                ADD         R6, R6, #1
+                LDR         R3, R6, #0
+                ADD         R6, R6, #1
+                LDR         R2, R6, #0
+                ADD         R6, R6, #1
+                LDR         R1, R6, #0
+                ADD         R6, R6, #1
+                RET
+                .END

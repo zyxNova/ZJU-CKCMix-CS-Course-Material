@@ -1,0 +1,285 @@
+body {
+    margin:0;
+    font-family: SimSun;
+    /* background-color:burlywood; */
+}
+
+a {
+    text-decoration: none;
+}
+
+#container {
+    width: 100%;
+    height:870px;
+    background-color: grey;
+}
+
+#box1 {
+    width:100%;
+    height: 110px;
+    background-color: #7D8561;
+}
+
+#box2 {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    margin: auto;
+    /* background-color: burlywood; */
+    /* background-image: url(../images/roll1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+#box3 {
+    width: 100%;
+    height: 740px;
+    background-color:#D5D7CC;
+}
+
+#box7 {
+    width:100%;
+    height: 40px;
+    background-color: #3c3c3c;
+}
+
+#box7 p{
+    color:white;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: 17px;
+    padding-left: 30px;
+    padding-top: 7px;
+}
+
+#box7 a {
+    color:white;
+}
+
+#box8 {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+}
+
+.box8child {
+    width:-webkit-calc(100%/5);
+	float: left;
+	height: 100%;
+	text-align: center;
+}
+
+.box8child a {
+    text-align: center;
+    line-height: 70px;
+    color:black;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.box8child a:hover {
+    color:#7D8561;
+}
+
+#mainbox {
+    width: 1200px;
+    height: 740px;
+    /* background-color:darkseagreen; */
+    margin: auto;
+}
+.box4 {
+    width: 100%;
+    height: 70px;
+    /* background-color: skyblue; */
+}
+
+.box5 {
+    width: 100%;
+    height: 280px;
+    /* background-color:darkgray; */
+}
+
+.box5child {
+    width:-webkit-calc(100%/3);
+	float: left;
+	height: 100%;
+    /* background-color:beige;     */
+}
+
+.box5left{
+    width: 360px;
+    height: 100%;
+    margin-right:40px;
+    /* background-color:chocolate; */
+}
+.box5mid{
+    width: 360px;
+    height: 100%;
+    margin:auto;
+    /* background-color:chocolate; */
+}
+.box5right{
+    width: 360px;
+    height: 100%;
+    margin-left:40px;
+    /* background-color:chocolate; */
+}
+
+.theme {
+    float: left;
+    width: 100%;
+    height: 40px;
+    /* background-color:cornflowerblue; */
+}
+
+.theme p {
+    line-height: 0px;
+    font-weight:bolder;
+    color:#576d69;
+    font-family:'Times New Roman', Times, serif;
+    font-size:20px;
+    text-align: center;
+    /* padding-left: 30px; */
+}
+
+.latest {
+    width: 100%;
+    height: 120px;
+    float:left;
+    /* background-color:darkgreen; */
+}
+
+.late-left {
+    float: left;
+    width: 30%;
+    height: 100%;
+    /* background-color:darkslategray; */
+}
+.late-left img {
+    height:70%;
+    padding-top: 20%;
+    /* padding-left: 20px; */
+    /* border-radius: 15px; */
+}
+.late-right {
+    float: left;
+    width:70%;
+    height: 100%;
+    /* background-color: forestgreen; */
+}
+
+.late-right p {
+    font-size:small;
+    color:rgb(103, 103, 103);
+    text-align: right;
+}
+.bigimg {
+    width:100%;
+    height: 240px;
+    /* background-color:lightseagreen; */
+}
+.bigimg img {
+    display: block;
+    height:200px;
+    margin:auto;
+    border-radius: 10px;
+}
+.caption {
+    float: left;
+    width: 100%;
+    height: 40px;
+    /* background-color:darkorange; */
+    text-align: center;
+}
+.caption a {
+    line-height: 10px;
+    text-align: center;
+    font-size:small;
+    color:rgb(103, 103, 103);
+}
+
+.caption a:hover {
+    color:#7D8561;
+}
+.title {
+    float:left;
+    width: 100%;
+    height: 40px;
+    /* background-color:darkorange; */
+}
+
+.title a {
+    font-size:small;
+    color:rgb(103, 103, 103);
+    line-height: 10px;
+    /* padding-left: 15px; */
+}
+
+.title a:hover {
+    color:#7D8561;
+}
+#box6 {
+    width: 100%;
+    height: 40px;
+    /* background-color:darkcyan; */
+}
+
+#box6 p {
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 750px;
+}
+
+.mySlides img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(168, 168, 168, 0.3);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
