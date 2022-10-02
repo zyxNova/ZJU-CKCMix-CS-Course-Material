@@ -1,0 +1,32 @@
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ALU_tb_behav xil_defaultlib.ALU_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.AND32
+Compiling module xil_defaultlib.AND32_0
+Compiling module xil_defaultlib.OR32
+Compiling module xil_defaultlib.OR32_0
+Compiling module xil_defaultlib.XOR32
+Compiling module xil_defaultlib.XOR32_0
+Compiling module xil_defaultlib.NOR32
+Compiling module xil_defaultlib.NOR32_0
+Compiling module xil_defaultlib.SRL32
+Compiling module xil_defaultlib.SRL32_0
+Compiling module xil_defaultlib.SEXT1_32
+Compiling module xil_defaultlib.SEXT1_32_0
+Compiling module xil_defaultlib.ADC32
+Compiling module xil_defaultlib.ADC32_0
+Compiling module xil_defaultlib.M8132
+Compiling module xil_defaultlib.M8132_0
+Compiling module xil_defaultlib.OR_BIT_32
+Compiling module xil_defaultlib.OR_BIT_32_0
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ALU_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALU_tb_behav

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OLab/Lab2/Comparator/Comparator.srcs/sources_1/new/Comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OLab/Lab2/Comparator/Comparator.srcs/sim_1/new/Comparator_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator_tb

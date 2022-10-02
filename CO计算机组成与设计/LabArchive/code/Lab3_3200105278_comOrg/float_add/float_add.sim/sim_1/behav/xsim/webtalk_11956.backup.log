@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Mar 19 12:28:15 2021
+# Process ID: 11956
+# Current directory: C:/Users/ASUS/Desktop/OExp_RISCV/OExp03/OExp03-float_add/float_add.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/ASUS/Desktop/OExp_RISCV/OExp03/OExp03-float_add/float_add.sim/sim_1/behav/xsim/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/ASUS/Desktop/OExp_RISCV/OExp03/OExp03-float_add/float_add.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/ASUS/Desktop/OExp_RISCV/OExp03/OExp03-float_add/float_add.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/ASUS/Desktop/OExp_RISCV/OExp03/OExp03-float_add/float_add.sim/sim_1/behav/xsim/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 19 12:28:16 2021...

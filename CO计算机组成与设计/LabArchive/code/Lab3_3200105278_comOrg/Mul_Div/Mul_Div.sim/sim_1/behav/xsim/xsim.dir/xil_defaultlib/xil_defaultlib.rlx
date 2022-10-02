@@ -1,0 +1,9 @@
+0.7
+2020.2
+Oct 19 2021
+03:16:22
+D:/OLab/HW/Lab3_3200105278_comOrg/Mul_Div/Mul_Div.sim/sim_1/behav/xsim/glbl.v,1634335545,verilog,,,,glbl,,,,,,,,
+D:/OLab/HW/Lab3_3200105278_comOrg/Mul_Div/Mul_Div.srcs/sim_1/new/Div_tb.v,1647527622,verilog,,,,Div_tb,,,,,,,,
+D:/OLab/HW/Lab3_3200105278_comOrg/Mul_Div/Mul_Div.srcs/sim_1/new/Mul_tb.v,1648706908,verilog,,,,tb,,,,,,,,
+D:/OLab/HW/Lab3_3200105278_comOrg/Mul_Div/Mul_Div.srcs/sources_1/new/Div.v,1648707043,verilog,,D:/OLab/HW/Lab3_3200105278_comOrg/Mul_Div/Mul_Div.srcs/sim_1/new/Div_tb.v,,div32,,,,,,,,
+D:/OLab/HW/Lab3_3200105278_comOrg/Mul_Div/Mul_Div.srcs/sources_1/new/Mul.v,1647525191,verilog,,D:/OLab/HW/Lab3_3200105278_comOrg/Mul_Div/Mul_Div.srcs/sim_1/new/Mul_tb.v,,mul32,,,,,,,,

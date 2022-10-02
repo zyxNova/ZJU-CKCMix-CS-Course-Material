@@ -1,0 +1,11 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OLab/Lab6/Cache/Cache.srcs/sources_1/new/Cache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Cache
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'state' is not allowed [D:/OLab/Lab6/Cache/Cache.srcs/sources_1/new/Cache.v:81]
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'next_state' is not allowed [D:/OLab/Lab6/Cache/Cache.srcs/sources_1/new/Cache.v:82]
+WARNING: [VRFC 10-3380] identifier 'addr_compTag' is used before its declaration [D:/OLab/Lab6/Cache/Cache.srcs/sources_1/new/Cache.v:93]
+WARNING: [VRFC 10-3380] identifier 'addr_compTag' is used before its declaration [D:/OLab/Lab6/Cache/Cache.srcs/sources_1/new/Cache.v:94]
+WARNING: [VRFC 10-3380] identifier 'addr_compTag' is used before its declaration [D:/OLab/Lab6/Cache/Cache.srcs/sources_1/new/Cache.v:95]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OLab/Lab6/Cache/Cache.srcs/sources_1/new/DMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OLab/Lab6/Cache/Cache.srcs/sim_1/new/cache_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache_tb

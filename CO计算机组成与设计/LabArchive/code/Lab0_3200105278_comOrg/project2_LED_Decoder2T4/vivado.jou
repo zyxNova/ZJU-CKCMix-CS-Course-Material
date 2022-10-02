@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu Mar  3 12:06:16 2022
+# Process ID: 20396
+# Current directory: D:/OLab/Lab0/LED_Decoder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28892 D:\OLab\Lab0\LED_Decoder\LED_Decoder.xpr
+# Log file: D:/OLab/Lab0/LED_Decoder/vivado.log
+# Journal file: D:/OLab/Lab0/LED_Decoder\vivado.jou
+# Running On: LAPTOP-9O13O695, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17041 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/OLab/Lab0/LED_Decoder/LED_Decoder.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/OLab/Lab0/LED_Decoder/LED_Decoder.runs/impl_1/LED_Decoder.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/OLab/Lab0/LED_Decoder/LED_Decoder.runs/impl_1/LED_Decoder.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/OLab/Lab0/LED_Decoder/LED_Decoder.runs/impl_1/LED_Decoder.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {D:/OLab/Lab0/LED_Decoder/LED_Decoder.runs/impl_1/LED_Decoder.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]

@@ -1,0 +1,61 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/Alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/Comparator.v" into library xil_defaultlib
+WARNING: [VRFC 10-3507] macro 'ALU_ADD' redefined [../../../../SCPU.srcs/sources_1/imports/sources_1/Defines.vh:69]
+WARNING: [VRFC 10-3507] macro 'ALU_SUB' redefined [../../../../SCPU.srcs/sources_1/imports/sources_1/Defines.vh:70]
+WARNING: [VRFC 10-3507] macro 'ALU_SLL' redefined [../../../../SCPU.srcs/sources_1/imports/sources_1/Defines.vh:71]
+WARNING: [VRFC 10-3507] macro 'ALU_SLT' redefined [../../../../SCPU.srcs/sources_1/imports/sources_1/Defines.vh:72]
+WARNING: [VRFC 10-3507] macro 'ALU_SLTU' redefined [../../../../SCPU.srcs/sources_1/imports/sources_1/Defines.vh:73]
+WARNING: [VRFC 10-3507] macro 'ALU_XOR' redefined [../../../../SCPU.srcs/sources_1/imports/sources_1/Defines.vh:74]
+WARNING: [VRFC 10-3507] macro 'ALU_SRL' redefined [../../../../SCPU.srcs/sources_1/imports/sources_1/Defines.vh:75]
+WARNING: [VRFC 10-3507] macro 'ALU_SRA' redefined [../../../../SCPU.srcs/sources_1/imports/sources_1/Defines.vh:76]
+WARNING: [VRFC 10-3507] macro 'ALU_OR' redefined [../../../../SCPU.srcs/sources_1/imports/sources_1/Defines.vh:77]
+WARNING: [VRFC 10-3507] macro 'ALU_AND' redefined [../../../../SCPU.srcs/sources_1/imports/sources_1/Defines.vh:78]
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/new/Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Core
+WARNING: [VRFC 10-3380] identifier 'is_aluRR' is used before its declaration [D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/Core.v:77]
+WARNING: [VRFC 10-3380] identifier 'is_aluRR' is used before its declaration [D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/Core.v:78]
+WARNING: [VRFC 10-3380] identifier 'cmp_res' is used before its declaration [D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/Core.v:79]
+WARNING: [VRFC 10-3380] identifier 'pc_branch' is used before its declaration [D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/Core.v:90]
+WARNING: [VRFC 10-3380] identifier 'rs1_val' is used before its declaration [D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/Core.v:168]
+WARNING: [VRFC 10-3380] identifier 'rs2_val' is used before its declaration [D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/Core.v:169]
+WARNING: [VRFC 10-3380] identifier 'reg_wen' is used before its declaration [D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/Core.v:170]
+WARNING: [VRFC 10-3380] identifier 'imm' is used before its declaration [D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/Core.v:171]
+WARNING: [VRFC 10-3380] identifier 'mem_wen' is used before its declaration [D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/Core.v:172]
+WARNING: [VRFC 10-3380] identifier 'mem_ren' is used before its declaration [D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/Core.v:173]
+WARNING: [VRFC 10-3380] identifier 'is_branch' is used before its declaration [D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/Core.v:174]
+WARNING: [VRFC 10-3380] identifier 'is_jal' is used before its declaration [D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/Core.v:175]
+WARNING: [VRFC 10-3380] identifier 'is_jalr' is used before its declaration [D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/Core.v:176]
+WARNING: [VRFC 10-3380] identifier 'is_auipc' is used before its declaration [D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/Core.v:177]
+WARNING: [VRFC 10-3380] identifier 'is_lui' is used before its declaration [D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/Core.v:178]
+WARNING: [VRFC 10-3380] identifier 'alu_ctrl' is used before its declaration [D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/Core.v:179]
+WARNING: [VRFC 10-3380] identifier 'cmp_ctrl' is used before its declaration [D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/Core.v:180]
+WARNING: [VRFC 10-3380] identifier 'is_imm' is used before its declaration [D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/Core.v:181]
+WARNING: [VRFC 10-3380] identifier 'alu_res' is used before its declaration [D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/Core.v:213]
+WARNING: [VRFC 10-3380] identifier 'cmp_res' is used before its declaration [D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/Core.v:221]
+WARNING: [VRFC 10-3380] identifier 'reg_i_data' is used before its declaration [D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/Core.v:242]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/new/DMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/new/IMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/new/ImmGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/LEDCtrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LEDCtrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/MACtrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MACtrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/Mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OLab/Lab5/Pipeline/SCPU.srcs/sources_1/imports/sources_1/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OLab/Lab5/Pipeline/SCPU.srcs/sim_1/new/core_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module core_tb
+INFO: [VRFC 10-2458] undeclared symbol dr1_wen, assumed default net type wire [D:/OLab/Lab5/Pipeline/SCPU.srcs/sim_1/new/core_tb.v:84]
+INFO: [VRFC 10-2458] undeclared symbol dr1_i_data, assumed default net type wire [D:/OLab/Lab5/Pipeline/SCPU.srcs/sim_1/new/core_tb.v:85]
+INFO: [VRFC 10-2458] undeclared symbol dr1_o_data, assumed default net type wire [D:/OLab/Lab5/Pipeline/SCPU.srcs/sim_1/new/core_tb.v:86]
+WARNING: [VRFC 10-2938] 'dr1_wen' is already implicitly declared on line 84 [D:/OLab/Lab5/Pipeline/SCPU.srcs/sim_1/new/core_tb.v:100]
+WARNING: [VRFC 10-2938] 'dr1_o_data' is already implicitly declared on line 86 [D:/OLab/Lab5/Pipeline/SCPU.srcs/sim_1/new/core_tb.v:101]
+WARNING: [VRFC 10-2938] 'dr1_i_data' is already implicitly declared on line 85 [D:/OLab/Lab5/Pipeline/SCPU.srcs/sim_1/new/core_tb.v:102]

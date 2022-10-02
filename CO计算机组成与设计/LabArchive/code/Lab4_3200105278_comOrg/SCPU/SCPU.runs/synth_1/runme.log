@@ -1,0 +1,712 @@
+
+*** Running vivado
+    with args -log Top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source Top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/OLab/Lab4/SCPU/SCPU.srcs/utils_1/imports/synth_1/Top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/OLab/Lab4/SCPU/SCPU.srcs/utils_1/imports/synth_1/Top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Top -part xc7k160tffg676-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Device 21-403] Loading part xc7k160tffg676-2L
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 45816
+WARNING: [Synth 8-2306] macro ALU_ADD redefined [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Defines.vh:79]
+WARNING: [Synth 8-2306] macro ALU_SUB redefined [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Defines.vh:80]
+WARNING: [Synth 8-2306] macro ALU_SLL redefined [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Defines.vh:81]
+WARNING: [Synth 8-2306] macro ALU_SLT redefined [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Defines.vh:82]
+WARNING: [Synth 8-2306] macro ALU_SLTU redefined [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Defines.vh:83]
+WARNING: [Synth 8-2306] macro ALU_XOR redefined [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Defines.vh:84]
+WARNING: [Synth 8-2306] macro ALU_SRL redefined [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Defines.vh:85]
+WARNING: [Synth 8-2306] macro ALU_SRA redefined [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Defines.vh:86]
+WARNING: [Synth 8-2306] macro ALU_OR redefined [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Defines.vh:87]
+WARNING: [Synth 8-2306] macro ALU_AND redefined [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Defines.vh:88]
+WARNING: [Synth 8-2611] redeclaration of ansi port INT is not allowed [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Core.v:90]
+WARNING: [Synth 8-6901] identifier 'is_mret' is used before its declaration [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Core.v:55]
+WARNING: [Synth 8-992] dr1_wen is already implicitly declared earlier [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Top.v:124]
+WARNING: [Synth 8-992] dr1_o_data is already implicitly declared earlier [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Top.v:125]
+WARNING: [Synth 8-992] dr1_i_data is already implicitly declared earlier [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Top.v:126]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1246.094 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ClockDividor' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/ClockDividor_stub.v:15]
+INFO: [Synth 8-6157] synthesizing module 'InputAntiJitter' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/InputAntiJitter_stub.v:15]
+INFO: [Synth 8-6157] synthesizing module 'Core' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Core.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Core.v:102]
+INFO: [Synth 8-6157] synthesizing module 'CSR' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/new/CSR.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/new/CSR.v:47]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/new/CSR.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'CSR' (1#1) [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/new/CSR.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Controller' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/new/Controller.v:22]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/new/Controller.v:99]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/new/Controller.v:109]
+INFO: [Synth 8-6155] done synthesizing module 'Controller' (2#1) [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/new/Controller.v:22]
+INFO: [Synth 8-6157] synthesizing module 'ImmGen' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/new/ImmGen.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/new/ImmGen.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'ImmGen' (3#1) [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/new/ImmGen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Alu' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Alu.v:34]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Alu.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'Alu' (4#1) [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Alu.v:34]
+INFO: [Synth 8-6157] synthesizing module 'Comparator' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Comparator.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Comparator.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'Comparator' (5#1) [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Comparator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RegFile' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/RegFile.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RegFile' (6#1) [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/RegFile.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Core' (7#1) [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Core.v:3]
+WARNING: [Synth 8-7071] port 'tim_int' of module 'Core' is unconnected for instance 'core' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Top.v:57]
+WARNING: [Synth 8-7071] port 'INT' of module 'Core' is unconnected for instance 'core' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Top.v:57]
+WARNING: [Synth 8-7023] instance 'core' of module 'Core' has 84 connections declared, but only 82 given [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Top.v:57]
+INFO: [Synth 8-6157] synthesizing module 'MACtrl' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/MACtrl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MACtrl' (8#1) [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/MACtrl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mem' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IMem' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/new/IMem.v:23]
+INFO: [Synth 8-3876] $readmem data file 'imem_data.mem' is read successfully [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/new/IMem.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'IMem' (9#1) [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/new/IMem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DMem' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/new/DMem.v:23]
+INFO: [Synth 8-3876] $readmem data file 'dmem_data.mem' is read successfully [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/new/DMem.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'DMem' (10#1) [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/new/DMem.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mem' (11#1) [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Mem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'VGA' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/Framework/VGA.v:3]
+INFO: [Synth 8-6157] synthesizing module 'VgaController' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/Framework/VgaController.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'VgaController' (12#1) [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/Framework/VgaController.v:1]
+INFO: [Synth 8-6157] synthesizing module 'VgaDisplay' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/Framework/VgaDisplay.v:1]
+INFO: [Synth 8-3876] $readmem data file 'vga_debugger.mem' is read successfully [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/Framework/VgaDisplay.v:15]
+INFO: [Synth 8-3876] $readmem data file 'font_8x16.mem' is read successfully [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/Framework/VgaDisplay.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'VgaDisplay' (13#1) [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/Framework/VgaDisplay.v:1]
+INFO: [Synth 8-6157] synthesizing module 'VgaDebugger' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/Framework/VgaDebugger.v:31]
+INFO: [Synth 8-6157] synthesizing module 'Hex2Ascii' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/Framework/VgaDebugger.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Hex2Ascii' (14#1) [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/Framework/VgaDebugger.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'VgaDebugger' (15#1) [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/Framework/VgaDebugger.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'VGA' (16#1) [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/Framework/VGA.v:3]
+INFO: [Synth 8-6157] synthesizing module 'LEDCtrl' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/LEDCtrl.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'LEDCtrl' (17#1) [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/LEDCtrl.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (18#1) [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Top.v:3]
+WARNING: [Synth 8-7129] Port clk_div[31] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[30] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[29] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[28] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[27] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[26] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[25] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[24] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[23] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[22] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[21] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[20] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[19] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[18] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[17] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[16] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[15] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[14] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[13] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[12] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[11] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[10] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[9] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[8] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[7] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[6] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[5] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[4] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[3] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_div[2] in module VGA is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[6] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[5] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[4] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[3] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[2] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[1] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[0] in module ImmGen is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1246.094 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1246.094 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1246.094 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 1246.094 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/OLab/Lab4/SCPU/SCPU.srcs/constrs_1/imports/constrs_1/Constraints.xdc]
+Finished Parsing XDC File [D:/OLab/Lab4/SCPU/SCPU.srcs/constrs_1/imports/constrs_1/Constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/OLab/Lab4/SCPU/SCPU.srcs/constrs_1/imports/constrs_1/Constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1261.418 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1261.418 ; gain = 0.000
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1261.418 ; gain = 15.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k160tffg676-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1261.418 ; gain = 15.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1261.418 ; gain = 15.324
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'o_data_reg' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/new/CSR.v:48]
+WARNING: [Synth 8-327] inferring latch for variable 'pc_exp_reg' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/new/CSR.v:56]
+WARNING: [Synth 8-327] inferring latch for variable 'immType_reg' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/new/Controller.v:90]
+WARNING: [Synth 8-327] inferring latch for variable 'cmp_ctrl_reg' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/new/Controller.v:100]
+WARNING: [Synth 8-327] inferring latch for variable 'csr_src2_reg' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/new/Controller.v:118]
+WARNING: [Synth 8-327] inferring latch for variable 'csr_ctrl_reg' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/new/Controller.v:110]
+WARNING: [Synth 8-327] inferring latch for variable 'imm_reg' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/new/ImmGen.v:30]
+WARNING: [Synth 8-327] inferring latch for variable 'result_reg' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Alu.v:66]
+WARNING: [Synth 8-327] inferring latch for variable 'result_reg' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Comparator.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'csr_i_data_reg' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Core.v:103]
+WARNING: [Synth 8-327] inferring latch for variable 'CauseVal_reg' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/Core.v:108]
+WARNING: [Synth 8-327] inferring latch for variable 'o_daddr' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/MACtrl.v:67]
+WARNING: [Synth 8-327] inferring latch for variable 'o_d_idata' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/MACtrl.v:68]
+WARNING: [Synth 8-327] inferring latch for variable 'o_dr1_idata' [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/MACtrl.v:70]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1261.418 ; gain = 15.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   33 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 3     
+	   2 Input    9 Bit       Adders := 1     
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 41    
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 66    
+	   8 Input   32 Bit        Muxes := 2     
+	  33 Input   32 Bit        Muxes := 2     
+	   4 Input   32 Bit        Muxes := 1     
+	   7 Input   32 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   8 Input    4 Bit        Muxes := 1     
+	 449 Input    4 Bit        Muxes := 1     
+	   8 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	   7 Input    2 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 7     
+	   2 Input    1 Bit        Muxes := 89    
+	   9 Input    1 Bit        Muxes := 2     
+	   6 Input    1 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 5     
+	  11 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 1     
+	 449 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:100)
+BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port inst[6] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[5] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[4] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[3] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[2] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[1] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inst[0] in module ImmGen is either unconnected or has no load
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "Top/mem/d_mem/dmem_reg",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "Top/vga/vga_display/display_data_reg",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "Top/vga/vga_display/display_data_reg",trying to implement using LUTRAM
+WARNING: [Synth 8-3332] Sequential element (CauseVal_reg[15]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (memacc/o_daddr[-1111111080]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (memacc/o_daddr[-1111111081]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (memacc/o_daddr[-1111111082]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (memacc/o_daddr[-1111111083]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (memacc/o_daddr[-1111111084]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (memacc/o_daddr[-1111111085]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (memacc/o_daddr[-1111111086]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (memacc/o_daddr[-1111111087]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (memacc/o_daddr[-1111111088]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (memacc/o_daddr[-1111111089]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (memacc/o_daddr[-1111111090]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (memacc/o_daddr[-1111111091]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (memacc/o_daddr[-1111111092]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (memacc/o_daddr[-1111111093]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (memacc/o_daddr[-1111111094]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (memacc/o_daddr[-1111111095]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (memacc/o_daddr[-1111111096]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (memacc/o_daddr[-1111111097]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (memacc/o_daddr[-1111111110]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (memacc/o_daddr[-1111111111]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[31]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[30]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[29]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[28]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[27]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[26]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[25]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[24]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[23]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[22]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[21]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[20]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[19]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[18]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[17]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[16]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[15]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[14]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[13]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[12]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[11]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[10]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[9]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[8]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[7]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[6]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[5]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[4]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[3]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[2]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[1]) is unused and will be removed from module Core.
+WARNING: [Synth 8-3332] Sequential element (alu/result_reg[0]) is unused and will be removed from module Core.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 1356.758 ; gain = 110.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|IMem        | imem       | 128x32        | LUT            | 
+|VgaDisplay  | fonts_data | 4096x8        | LUT            | 
+|Top         | p_0_out    | 128x32        | LUT            | 
+|Top         | p_0_out    | 4096x8        | LUT            | 
++------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+----------------------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object                       | Inference | Size (Depth x Width) | Primitives       | 
++------------+----------------------------------+-----------+----------------------+------------------+
+|Top         | mem/d_mem/dmem_reg               | Implied   | 4 K x 32             | RAM256X1S x 512  | 
+|Top         | vga/vga_display/display_data_reg | Implied   | 4 K x 7              | RAM64M x 192     | 
++------------+----------------------------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:02 . Memory (MB): peak = 1356.758 ; gain = 110.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:15 . Memory (MB): peak = 1356.758 ; gain = 110.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+----------------------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object                       | Inference | Size (Depth x Width) | Primitives       | 
++------------+----------------------------------+-----------+----------------------+------------------+
+|Top         | mem/d_mem/dmem_reg               | Implied   | 4 K x 32             | RAM256X1S x 512  | 
+|Top         | vga/vga_display/display_data_reg | Implied   | 4 K x 7              | RAM64M x 192     | 
++------------+----------------------------------+-----------+----------------------+------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:21 ; elapsed = 00:01:22 . Memory (MB): peak = 1356.758 ; gain = 110.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:26 ; elapsed = 00:01:27 . Memory (MB): peak = 1367.500 ; gain = 121.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:26 ; elapsed = 00:01:27 . Memory (MB): peak = 1367.500 ; gain = 121.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:26 ; elapsed = 00:01:27 . Memory (MB): peak = 1367.500 ; gain = 121.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:26 ; elapsed = 00:01:27 . Memory (MB): peak = 1367.500 ; gain = 121.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:27 ; elapsed = 00:01:28 . Memory (MB): peak = 1367.500 ; gain = 121.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:27 ; elapsed = 00:01:28 . Memory (MB): peak = 1367.500 ; gain = 121.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------+----------+
+|      |BlackBox name   |Instances |
++------+----------------+----------+
+|1     |ClockDividor    |         1|
+|2     |InputAntiJitter |         1|
++------+----------------+----------+
+
+Report Cell Usage: 
++------+---------------------+------+
+|      |Cell                 |Count |
++------+---------------------+------+
+|1     |ClockDividor_bbox    |     1|
+|2     |InputAntiJitter_bbox |     1|
+|3     |BUFG                 |     7|
+|4     |CARRY4               |    62|
+|5     |LUT1                 |   128|
+|6     |LUT2                 |   267|
+|7     |LUT3                 |   382|
+|8     |LUT4                 |   258|
+|9     |LUT5                 |   604|
+|10    |LUT6                 |  2901|
+|11    |MUXF7                |   449|
+|12    |MUXF8                |   153|
+|13    |RAM256X1S            |   512|
+|14    |RAM64M               |   128|
+|15    |RAM64X1D             |    62|
+|16    |FDCE                 |  1279|
+|17    |FDPE                 |     8|
+|18    |FDRE                 |    54|
+|19    |FDSE                 |     2|
+|20    |LD                   |   299|
+|21    |IBUF                 |    23|
+|22    |OBUF                 |    27|
++------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:27 ; elapsed = 00:01:28 . Memory (MB): peak = 1367.500 ; gain = 121.406
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 78 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:19 ; elapsed = 00:01:25 . Memory (MB): peak = 1367.500 ; gain = 106.082
+Synthesis Optimization Complete : Time (s): cpu = 00:01:27 ; elapsed = 00:01:28 . Memory (MB): peak = 1367.500 ; gain = 121.406
+INFO: [Project 1-571] Translating synthesized netlist
+Parsing EDIF File [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/ClockDividor.edf]
+Finished Parsing EDIF File [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/ClockDividor.edf]
+Parsing EDIF File [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/InputAntiJitter.edf]
+Finished Parsing EDIF File [D:/OLab/Lab4/SCPU/SCPU.srcs/sources_1/imports/sources_1/InputAntiJitter.edf]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.119 . Memory (MB): peak = 1390.371 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1686 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-35] Removing redundant IBUF, clock_dividor/clk_IBUF_inst, from the path connected to top-level port: clk_100mhz 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. clock_dividor/clk_step_IBUF_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. clock_dividor/rst_IBUF_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. clock_dividor/step_en_IBUF_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, inputter/clk_IBUF_inst, from the path connected to top-level port: clk_100mhz 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, inputter/key_col_IBUF[0]_inst, from the path connected to top-level port: key_col[0] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, inputter/key_col_IBUF[1]_inst, from the path connected to top-level port: key_col[1] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, inputter/key_col_IBUF[2]_inst, from the path connected to top-level port: key_col[2] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, inputter/key_col_IBUF[3]_inst, from the path connected to top-level port: key_col[3] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, inputter/key_col_IBUF[4]_inst, from the path connected to top-level port: key_col[4] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, inputter/rstn_IBUF_inst, from the path connected to top-level port: rstn 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, inputter/sw_in_IBUF[0]_inst, from the path connected to top-level port: sw_in[0] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, inputter/sw_in_IBUF[10]_inst, from the path connected to top-level port: sw_in[10] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, inputter/sw_in_IBUF[11]_inst, from the path connected to top-level port: sw_in[11] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, inputter/sw_in_IBUF[12]_inst, from the path connected to top-level port: sw_in[12] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, inputter/sw_in_IBUF[13]_inst, from the path connected to top-level port: sw_in[13] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, inputter/sw_in_IBUF[14]_inst, from the path connected to top-level port: sw_in[14] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, inputter/sw_in_IBUF[15]_inst, from the path connected to top-level port: sw_in[15] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, inputter/sw_in_IBUF[1]_inst, from the path connected to top-level port: sw_in[1] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, inputter/sw_in_IBUF[2]_inst, from the path connected to top-level port: sw_in[2] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, inputter/sw_in_IBUF[3]_inst, from the path connected to top-level port: sw_in[3] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, inputter/sw_in_IBUF[4]_inst, from the path connected to top-level port: sw_in[4] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, inputter/sw_in_IBUF[5]_inst, from the path connected to top-level port: sw_in[5] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, inputter/sw_in_IBUF[6]_inst, from the path connected to top-level port: sw_in[6] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, inputter/sw_in_IBUF[7]_inst, from the path connected to top-level port: sw_in[7] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, inputter/sw_in_IBUF[8]_inst, from the path connected to top-level port: sw_in[8] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, inputter/sw_in_IBUF[9]_inst, from the path connected to top-level port: sw_in[9] 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_cpu_OBUF_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[0]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[10]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[11]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[12]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[13]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[14]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[15]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[16]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[17]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[18]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[19]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[1]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[20]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[21]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[22]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[23]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[24]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[25]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[26]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[27]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[28]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[29]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[2]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[30]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[31]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[3]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[4]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[5]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[6]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[7]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[8]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. clock_dividor/clk_div_OBUF[9]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, key_row_OBUF[0]_inst, from the path connected to top-level port: key_row[0] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, key_row_OBUF[1]_inst, from the path connected to top-level port: key_row[1] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, key_row_OBUF[2]_inst, from the path connected to top-level port: key_row[2] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, key_row_OBUF[3]_inst, from the path connected to top-level port: key_row[3] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, key_row_OBUF[4]_inst, from the path connected to top-level port: key_row[4] 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. inputter/key_x_OBUF[0]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. inputter/key_x_OBUF[1]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. inputter/key_x_OBUF[2]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. inputter/key_x_OBUF[3]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. inputter/key_x_OBUF[4]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. inputter/key_y_OBUF[0]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. inputter/key_y_OBUF[1]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. inputter/key_y_OBUF[2]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. inputter/key_y_OBUF[3]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. inputter/key_y_OBUF[4]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. inputter/rst_OBUF_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. inputter/sw_OBUF[0]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. inputter/sw_OBUF[10]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. inputter/sw_OBUF[11]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. inputter/sw_OBUF[12]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. inputter/sw_OBUF[13]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. inputter/sw_OBUF[14]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. inputter/sw_OBUF[15]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. inputter/sw_OBUF[1]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. inputter/sw_OBUF[2]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. inputter/sw_OBUF[3]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. inputter/sw_OBUF[4]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. inputter/sw_OBUF[5]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. inputter/sw_OBUF[6]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. inputter/sw_OBUF[7]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. inputter/sw_OBUF[8]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. inputter/sw_OBUF[9]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'inputter/key_col[0]' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'inputter/key_col[1]' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'inputter/key_col[2]' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'inputter/key_col[3]' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'inputter/key_col[4]' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'inputter/rstn' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'inputter/sw_in[0]' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'inputter/sw_in[10]' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'inputter/sw_in[11]' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'inputter/sw_in[12]' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'inputter/sw_in[13]' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'inputter/sw_in[14]' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'inputter/sw_in[15]' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'inputter/sw_in[1]' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'inputter/sw_in[2]' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'inputter/sw_in[3]' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'inputter/sw_in[4]' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'inputter/sw_in[5]' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'inputter/sw_in[6]' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'inputter/sw_in[7]' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'inputter/sw_in[8]' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IOSTANDARD' constraint because net 'inputter/sw_in[9]' is not directly connected to top level port. Synthesis is ignored for IOSTANDARD but preserved for implementation.
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 124 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1396.285 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1001 instances were transformed.
+  LD => LDCE: 175 instances
+  LD => LDCE (inverted pins: G): 124 instances
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 512 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 128 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 62 instances
+
+Synth Design complete, checksum: 2195a28c
+INFO: [Common 17-83] Releasing license: Synthesis
+70 Infos, 249 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:33 ; elapsed = 00:01:34 . Memory (MB): peak = 1396.285 ; gain = 150.191
+INFO: [Common 17-1381] The checkpoint 'D:/OLab/Lab4/SCPU/SCPU.runs/synth_1/Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May  3 12:21:44 2022...

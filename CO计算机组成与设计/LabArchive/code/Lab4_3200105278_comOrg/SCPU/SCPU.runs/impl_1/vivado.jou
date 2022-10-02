@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue May  3 12:21:54 2022
+# Process ID: 45588
+# Current directory: D:/OLab/Lab4/SCPU/SCPU.runs/impl_1
+# Command line: vivado.exe -log Top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Top.tcl -notrace
+# Log file: D:/OLab/Lab4/SCPU/SCPU.runs/impl_1/Top.vdi
+# Journal file: D:/OLab/Lab4/SCPU/SCPU.runs/impl_1\vivado.jou
+# Running On: LAPTOP-9O13O695, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17041 MB
+#-----------------------------------------------------------
+source Top.tcl -notrace
