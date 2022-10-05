@@ -1,8 +1,0 @@
-integer i;
-initial begin
-S=0;
-A=4'b1010;B=4'b0111;#100;
-B=4'b0011;
-for (i=0; i<=3;i=i+1) begin
-	 #100;S=i;end
-end

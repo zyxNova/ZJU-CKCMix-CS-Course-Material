@@ -1,4 +1,4 @@
-ACLLib/
-实验报告/*.doc*
-实验报告/*/*.doc
-实验报告/*/*.md
+acllib/
+report/*.doc*
+report/*/*.doc
+report/*/*.md
