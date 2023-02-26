@@ -1,0 +1,13 @@
+<!--pages/user/user.wxml-->
+<!-- <text>pages/user/user.wxml</text> -->
+<view style="padding-bottom: 20px"></view>
+<view class="page">
+    <view class="content" wx:for="{{users}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+        <userItem item="{{item}}"></userItem> 
+    </view>
+    <view class="latest">
+        <view class="late-content" wx:for="{{broads}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+        <lastestItem item="{{item}}"></lastestItem> 
+        </view>
+    </view>
+</view>

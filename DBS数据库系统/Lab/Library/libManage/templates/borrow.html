@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<p>{{ borrows|length }} Titles</p>
+{% if current_user.is_authenticated %}
+<form method="post" >
+    CardID <input style="width:100px" type="text" name="cid" autocomplete="off">
+    <input class="btn" type="submit" name="query" value="Query">
+    BookID <input style="width:100px" type="text" name="bid" autocomplete="off">
+    <input class="btn" type="submit" name="borrow" value="Borrow">
+</form>
+{% endif %}
+<ul class="borrow-list">
+    <table>
+        <thead><th>Card ID</th><th>Book ID</th><th>Title</th><th>Author</th>
+            <th>Borrow Date</th><th>Return Date</th><th>Option</th></thead>
+        <tbody>
+            {% if borrows %}
+            {% for borrow in borrows %}
+            <tr>
+                <td>{{borrow.card_id}}</td>
+                <td>{{borrow.book_id}}</td>
+                <td>{{borrow.title}}</td>
+                <td>{{borrow.author}}</td>
+                <td>{{borrow.borrow_date.strftime('%Y-%m-%d')}}</td>
+                <td>{{borrow.return_date.strftime('%Y-%m-%d')}}</td>
+                <td>
+                    <form class="inline-form" method="get" action="{{ url_for('returnBook', book_id=borrow.book_id, card_id=borrow.card_id) }}">
+                        <input class="btn" type="submit" name="return" value="Return">
+                    </form></td>
+            </tr>
+            {% endfor %}
+            {% endif %}
+        </tbody>
+    </table>
+</ul>
+{% endblock %}

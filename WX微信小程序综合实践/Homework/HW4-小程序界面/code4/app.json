@@ -1,0 +1,34 @@
+{
+    "pages": [
+        "index/index",
+        "index/index2"
+    ],
+    "tabBar": {
+        "custom": true,
+        "color": "#7A7E83",
+        "selectedColor": "#3cc51f",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "index/index",
+                "iconPath": "image/icon_location.png",
+                "selectedIconPath": "image/icon_location_HL.png",
+                "text": "地图"
+            },
+            {
+                "pagePath": "index/index2",
+                "iconPath": "image/icon_share.png",
+                "selectedIconPath": "image/icon_share_HL.png",
+                "text": "分享"
+            }
+        ]
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black"
+    },
+    "sitemapLocation": "sitemap.json"
+}

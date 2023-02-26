@@ -1,0 +1,25 @@
+0.7
+2020.2
+Oct 19 2021
+03:16:22
+D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/ADC32_0/sim/ADC32_0.v,1646283337,verilog,,D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/XOR32_0/src/XOR32.v,,ADC32_0,,,,,,,,
+D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/ADC32_0/src/ADC32.v,1646283337,verilog,,D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/ADC32_0/sim/ADC32_0.v,,ADC32,,,,,,,,
+D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/AND32_0/sim/AND32_0.v,1646196709,verilog,,D:/OLab/Lab1/ALU/ALU.srcs/sources_1/new/ALU.v,,AND32_0,,,,,,,,
+D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/AND32_0/src/AND32.v,1646196709,verilog,,D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/AND32_0/sim/AND32_0.v,,AND32,,,,,,,,
+D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/M8132_0/sim/M8132_0.v,1646199584,verilog,,D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/ADC32_0/src/ADC32.v,,M8132_0,,,,,,,,
+D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/M8132_0/src/M8132.v,1646199584,verilog,,D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/M8132_0/sim/M8132_0.v,,M8132,,,,,,,,
+D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/NOR32_0/sim/NOR32_0.v,1646197277,verilog,,D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/OR32_0/src/OR32.v,,NOR32_0,,,,,,,,
+D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/NOR32_0/src/NOR32.v,1646197277,verilog,,D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/NOR32_0/sim/NOR32_0.v,,NOR32,,,,,,,,
+D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/OR32_0/sim/OR32_0.v,1646196847,verilog,,D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/AND32_0/src/AND32.v,,OR32_0,,,,,,,,
+D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/OR32_0/src/OR32.v,1646196847,verilog,,D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/OR32_0/sim/OR32_0.v,,OR32,,,,,,,,
+D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/OR_BIT_32_0/sim/OR_BIT_32_0.v,1646199654,verilog,,D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/M8132_0/src/M8132.v,,OR_BIT_32_0,,,,,,,,
+D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/OR_BIT_32_0/src/OR_BIT_32.v,1646199654,verilog,,D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/OR_BIT_32_0/sim/OR_BIT_32_0.v,,OR_BIT_32,,,,,,,,
+,,,,D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/SRL32_0/src/SRL32.v,,SEXT1_32_0,,,,,,,,
+,,,,D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/SEXT1_32_0/sim/SEXT1_32_0.v,,SEXT1_32,,,,,,,,
+D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/SRL32_0/sim/SRL32_0.v,1646197363,verilog,,D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/NOR32_0/src/NOR32.v,,SRL32_0,,,,,,,,
+D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/SRL32_0/src/SRL32.v,1646197363,verilog,,D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/SRL32_0/sim/SRL32_0.v,,SRL32,,,,,,,,
+D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/XOR32_0/sim/XOR32_0.v,1646196977,verilog,,D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/SEXT1_32_0/src/SEXT1_32.v,,XOR32_0,,,,,,,,
+D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/XOR32_0/src/XOR32.v,1646196977,verilog,,D:/OLab/Lab1/ALU/ALU.gen/sources_1/ip/XOR32_0/sim/XOR32_0.v,,XOR32,,,,,,,,
+D:/OLab/Lab1/ALU/ALU.sim/sim_1/behav/xsim/glbl.v,1634335545,verilog,,,,glbl,,,,,,,,
+D:/OLab/Lab1/ALU/ALU.srcs/sim_1/new/ALU_tb.v,1646282289,verilog,,,,ALU_tb,,,,,,,,
+D:/OLab/Lab1/ALU/ALU.srcs/sources_1/new/ALU.v,1646203808,verilog,,D:/OLab/Lab1/ALU/ALU.srcs/sim_1/new/ALU_tb.v,,ALU,,,,,,,,

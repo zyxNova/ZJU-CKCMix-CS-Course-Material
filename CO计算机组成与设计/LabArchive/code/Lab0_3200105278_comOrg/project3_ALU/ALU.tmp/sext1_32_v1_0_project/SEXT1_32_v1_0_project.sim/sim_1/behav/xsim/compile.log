@@ -1,0 +1,2 @@
+ERROR: [XSIM 43-3255] File name is missing.
+ERROR: [XSIM 43-3217] SEXT1_32_tb_vlog.prj (line 2): Incorrect project file syntax. Correct syntax is one of: vhdl <worklib> <file>, verilog <worklib> <file> [<file> ...] [[-d <macro>] ...] [[-i <include>] ...], or NOSORT. Presence of NOSORT on a line of its own disables file order sorting.

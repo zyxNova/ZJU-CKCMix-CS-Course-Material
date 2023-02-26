@@ -1,0 +1,7 @@
+<!--pages/broadcast/broadcast.wxml-->
+<!-- <text>pages/broadcast/broadcast.wxml</text> -->
+<view class="page">
+    <view class="content" wx:for="{{broadcasts}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+        <broadItem item="{{item}}"></broadItem> 
+    </view>
+</view>

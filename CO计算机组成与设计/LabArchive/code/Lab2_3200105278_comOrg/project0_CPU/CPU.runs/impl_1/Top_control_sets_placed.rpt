@@ -1,0 +1,202 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Thu Mar 31 14:35:20 2022
+| Host         : LAPTOP-9O13O695 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
+| Design       : Top
+| Device       : xc7k160t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   124 |
+|    Minimum number of control sets                        |   124 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    66 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   124 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |    43 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    75 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             173 |          107 |
+| No           | No                    | Yes                    |              28 |            7 |
+| No           | Yes                   | No                     |              70 |           24 |
+| Yes          | No                    | No                     |               6 |            4 |
+| Yes          | No                    | Yes                    |             992 |          487 |
+| Yes          | Yes                   | No                     |              57 |           20 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------+------------------------------------------------+-------------------------------------------+------------------+----------------+--------------+
+|             Clock Signal            |                  Enable Signal                 |              Set/Reset Signal             | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------------+------------------------------------------------+-------------------------------------------+------------------+----------------+--------------+
+|  inputter/clk_IBUF_BUFG             | inputter/sw[15]_i_1_n_0                        |                                           |                1 |              1 |         1.00 |
+|  inputter/clk_IBUF_BUFG             | inputter/key_x[4]_i_2_n_0                      | inputter/key_x[4]_i_1_n_0                 |                1 |              1 |         1.00 |
+|  core/comparator/result_reg_i_2_n_2 |                                                |                                           |                1 |              1 |         1.00 |
+|  inputter/clk_IBUF_BUFG             | inputter/key_temp2[4]_i_2_n_0                  | inputter/key_temp2                        |                2 |              5 |         2.50 |
+|  inputter/clk_IBUF_BUFG             | inputter/key_row[4]_i_1_n_0                    |                                           |                3 |              5 |         1.67 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[11]_18       |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[7]_rep__1_1  |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[6]_5         |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[11]_17       |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[6]_0         |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[11]_6        |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[11]_19       |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[11]_16       |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[3]_rep_0     |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[9]_2         |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[7]_rep__1_4  |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[9]_1         |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[9]_0         |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[11]_8        |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[6]_4         |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[11]_7        |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[11]_15       |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[6]_3         |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[8]_3         |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[11]_9        |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[11]_5        |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[8]_2         |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[8]_1         |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[7]_rep__1_0  |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[7]_rep__1_2  |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[11]_3        |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[11]_2        |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[6]_1         |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[11]_13       |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[11]_14       |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[6]_2         |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[8]_0         |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[11]_20       |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[7]_rep__1_3  |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[1]           | vga/vga_controller/v_count[9]_i_1_n_0          | inputter/rst_OBUF                         |                6 |             10 |         1.67 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[11]_4        |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[10]_rep__2_0 |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[10]_rep__2_1 |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[11]_0        |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[11]_1        |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[11]_10       |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[11]_11       |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[0]           | vga/vga_debugger/display_addr_reg[11]_12       |                                           |                3 |             10 |         3.33 |
+|  vga/clk_div_IBUF_BUFG[1]           |                                                | inputter/rst_OBUF                         |                7 |             12 |         1.71 |
+|  inputter/clk_IBUF_BUFG             | inputter/sw_counter[0]_i_2_n_0                 | inputter/sw_counter_reg[0]_i_1_n_2        |                5 |             20 |         4.00 |
+|  inputter/clk_IBUF_BUFG             | inputter/key_counter[0]_i_1_n_0                | inputter/key_temp2                        |                6 |             21 |         3.50 |
+|  inputter/clk_IBUF_BUFG             |                                                |                                           |                6 |             21 |         3.50 |
+|  vga/clk_div_IBUF_BUFG[0]           |                                                | vga/vga_debugger/display_addr[11]_i_1_n_0 |                8 |             26 |         3.25 |
+|  clock_dividor/clk_IBUF_BUFG        |                                                | inputter/rst_OBUF                         |                7 |             28 |         4.00 |
+|  clk0_BUFG                          | core/reg_file/register[6][31]_i_1_n_2          | inputter/rst_OBUF                         |               19 |             32 |         1.68 |
+|  clk0_BUFG                          | core/reg_file/register[27][31]_i_1_n_2         | inputter/rst_OBUF                         |               16 |             32 |         2.00 |
+|  clk0_BUFG                          | core/reg_file/register[10][31]_i_1_n_2         | inputter/rst_OBUF                         |               16 |             32 |         2.00 |
+|  clk0_BUFG                          | core/reg_file/register[16][31]_i_1_n_2         | inputter/rst_OBUF                         |               15 |             32 |         2.13 |
+|  clk0_BUFG                          | core/reg_file/register[15][31]_i_1_n_2         | inputter/rst_OBUF                         |               14 |             32 |         2.29 |
+|  clk0_BUFG                          | core/reg_file/register[18][31]_i_1_n_2         | inputter/rst_OBUF                         |               10 |             32 |         3.20 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_0_31_0_0_i_1_n_0             |                                           |                8 |             32 |         4.00 |
+|  core/core_others/clk_IBUF_BUFG     |                                                | inputter/rst_OBUF                         |                9 |             32 |         3.56 |
+|  clk0_BUFG                          | core/reg_file/register[28][31]_i_1_n_2         | inputter/rst_OBUF                         |               17 |             32 |         1.88 |
+|  n_0_1_BUFG                         |                                                |                                           |               27 |             32 |         1.19 |
+|  p_0_in                             |                                                |                                           |               22 |             32 |         1.45 |
+|  clk0_BUFG                          | core/reg_file/register[26][31]_i_1_n_2         | inputter/rst_OBUF                         |               17 |             32 |         1.88 |
+|  clk0_BUFG                          | core/reg_file/register[29][31]_i_1_n_2         | inputter/rst_OBUF                         |               15 |             32 |         2.13 |
+|  clk0_BUFG                          | core/reg_file/register[17][31]_i_1_n_2         | inputter/rst_OBUF                         |               15 |             32 |         2.13 |
+|  clk0_BUFG                          | core/reg_file/register[31][31]_i_1_n_2         | inputter/rst_OBUF                         |               16 |             32 |         2.00 |
+|  clk0_BUFG                          | core/reg_file/register[3][31]_i_1_n_2          | inputter/rst_OBUF                         |               14 |             32 |         2.29 |
+|  clk0_BUFG                          | core/reg_file/register[7][31]_i_1_n_2          | inputter/rst_OBUF                         |               14 |             32 |         2.29 |
+|  clk0_BUFG                          | core/reg_file/register[24][31]_i_1_n_2         | inputter/rst_OBUF                         |               18 |             32 |         1.78 |
+|  clk0_BUFG                          | core/reg_file/register[2][31]_i_1_n_2          | inputter/rst_OBUF                         |               17 |             32 |         1.88 |
+|  clk0_BUFG                          | core/reg_file/register[14][31]_i_1_n_2         | inputter/rst_OBUF                         |               13 |             32 |         2.46 |
+|  clk0_BUFG                          | core/reg_file/register[25][31]_i_1_n_2         | inputter/rst_OBUF                         |               17 |             32 |         1.88 |
+|  clk0_BUFG                          | core/reg_file/register[30][31]_i_1_n_2         | inputter/rst_OBUF                         |               17 |             32 |         1.88 |
+|  clk0_BUFG                          | core/reg_file/register[13][31]_i_1_n_2         | inputter/rst_OBUF                         |               14 |             32 |         2.29 |
+|  clk0_BUFG                          | core/reg_file/register[23][31]_i_1_n_2         | inputter/rst_OBUF                         |               12 |             32 |         2.67 |
+|  clk0_BUFG                          | core/reg_file/register[19][31]_i_1_n_2         | inputter/rst_OBUF                         |               12 |             32 |         2.67 |
+|  clk0_BUFG                          | core/reg_file/register[20][31]_i_1_n_2         | inputter/rst_OBUF                         |               13 |             32 |         2.46 |
+|  clk0_BUFG                          | core/reg_file/register[12][31]_i_1_n_2         | inputter/rst_OBUF                         |               26 |             32 |         1.23 |
+|  clk0_BUFG                          | core/reg_file/register[8][31]_i_1_n_2          | inputter/rst_OBUF                         |               14 |             32 |         2.29 |
+|  clk0_BUFG                          | core/reg_file/register[22][31]_i_1_n_2         | inputter/rst_OBUF                         |               15 |             32 |         2.13 |
+|  clk0_BUFG                          | core/reg_file/register[4][31]_i_1_n_2          | inputter/rst_OBUF                         |               19 |             32 |         1.68 |
+|  clk0_BUFG                          | core/reg_file/register[11][31]_i_1_n_2         | inputter/rst_OBUF                         |               15 |             32 |         2.13 |
+|  clk0_BUFG                          | core/reg_file/register[5][31]_i_1_n_2          | inputter/rst_OBUF                         |               17 |             32 |         1.88 |
+|  clk0_BUFG                          | core/reg_file/register[1][31]_i_1_n_2          | inputter/rst_OBUF                         |               17 |             32 |         1.88 |
+|  clk0_BUFG                          | core/reg_file/register[21][31]_i_1_n_2         | inputter/rst_OBUF                         |               19 |             32 |         1.68 |
+|  clk0_BUFG                          | core/reg_file/register[9][31]_i_1_n_2          | inputter/rst_OBUF                         |               14 |             32 |         2.29 |
+|  n_1_1452_BUFG                      |                                                |                                           |               18 |             40 |         2.22 |
+|  o_daddr0                           |                                                |                                           |               32 |             45 |         1.41 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_0_127_0_0_i_1_n_0            |                                           |               16 |             64 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_7680_7935_0_0_i_1_n_0        |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_768_1023_0_0_i_1_n_0         |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_2304_2559_0_0_i_1_n_0        |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_2048_2303_0_0_i_1_n_0        |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_1024_1279_0_0_i_1_n_0        |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_0_255_0_0_i_1_n_0            |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_6912_7167_0_0_i_1_n_0        |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_6656_6911_0_0_i_1_n_0        |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_6144_6399_0_0_i_1_n_0        |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_6400_6655_0_0_i_1_n_0        |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_5632_5887_0_0_i_1_n_0        |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_5888_6143_0_0_i_1_n_0        |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_5376_5631_0_0_i_1_n_0        |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_512_767_0_0_i_1_n_0          |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_5120_5375_0_0_i_1_n_0        |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_4864_5119_0_0_i_1_n_0        |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_4608_4863_0_0_i_1_n_0        |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_4352_4607_0_0_i_1_n_0        |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_4096_4351_0_0_i_1_n_0        |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_3840_4095_0_0_i_1_n_0        |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_3584_3839_0_0_i_1_n_0        |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_3328_3583_0_0_i_1_n_0        |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_3072_3327_0_0_i_1_n_0        |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_2816_3071_0_0_i_1_n_0        |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_2560_2815_0_0_i_1_n_0        |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_256_511_0_0_i_1_n_0          |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_7168_7423_0_0_i_1_n_0        |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_1792_2047_0_0_i_1_n_0        |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_7424_7679_0_0_i_1_n_0        |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_1536_1791_0_0_i_1_n_0        |                                           |               32 |            128 |         4.00 |
+|  mem/d_mem/clk_IBUF_BUFG            | mem/d_mem/mem_reg_1280_1535_0_0_i_1_n_0        |                                           |               32 |            128 |         4.00 |
+|  vga/clk_div_IBUF_BUFG[0]           |                                                |                                           |               56 |            222 |         3.96 |
++-------------------------------------+------------------------------------------------+-------------------------------------------+------------------+----------------+--------------+
+
+

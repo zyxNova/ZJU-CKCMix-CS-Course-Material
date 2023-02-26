@@ -1,0 +1,4 @@
+<!--components/latestItem/latestItem.wxml-->
+<!-- <text>components/latestItem/latestItem.wxml</text> -->
+<view class="broad-item" style="background-image: url('{{item.thumb}}');"></view>
+<view class="broad-text">{{item.name}}</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "userItem": "../../components/userItem/userItem",
+    "lastestItem": "../../components/latestItem/latestItem"
+  }
+}

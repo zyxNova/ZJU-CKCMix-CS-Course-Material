@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OLab/Lab0/MUX8T1/MUX8T1.srcs/sources_1/new/MUX8T1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX8T1
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'o' is not allowed [D:/OLab/Lab0/MUX8T1/MUX8T1.srcs/sources_1/new/MUX8T1.v:28]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OLab/Lab0/MUX8T1/MUX8T1.srcs/sim_1/new/MUX8T1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX8T1_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/OLab/Lab0/MUX8T1/MUX8T1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

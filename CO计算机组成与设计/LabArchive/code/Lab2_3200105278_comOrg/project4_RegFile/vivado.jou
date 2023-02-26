@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu Mar 17 22:05:44 2022
+# Process ID: 17572
+# Current directory: D:/OLab/HW/Lab1_3200105278_comOrg/project4_RegFile
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13592 D:\OLab\HW\Lab1_3200105278_comOrg\project4_RegFile\RegFile.xpr
+# Log file: D:/OLab/HW/Lab1_3200105278_comOrg/project4_RegFile/vivado.log
+# Journal file: D:/OLab/HW/Lab1_3200105278_comOrg/project4_RegFile\vivado.jou
+# Running On: LAPTOP-9O13O695, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17041 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/OLab/HW/Lab1_3200105278_comOrg/project4_RegFile/RegFile.xpr
+update_compile_order -fileset sources_1

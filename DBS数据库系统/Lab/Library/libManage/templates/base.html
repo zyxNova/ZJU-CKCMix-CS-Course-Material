@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/library.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+    {% endblock %}
+</head>
+<body>
+    {% for message in get_flashed_messages() %}
+        <div class="alert">{{ message }}</div>
+    {% endfor %}
+    <h2>
+        <img alt="Avatar" class="avatar" src="{{ url_for('static', filename='images/avatar.png') }}">
+        {{ user.name }}'s Library Management System
+    </h2>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Library</a></li>
+            {% if current_user.is_authenticated %}
+            <li><a href="{{ url_for('bookManage') }}">Book Management</a></li>
+            <li><a href="{{ url_for('cardManage') }}">Card Management</a></li>
+                <li><a href="{{ url_for('borrow') }}">Borrow & Return</a></li>
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+            {% else %}
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+    
+    {% block content %}{% endblock %}
+    <img alt="Jumping Rabbit" class="rabbit" src="{{ url_for('static', filename='images/reading.gif') }}" title="jump~jump~jump!">
+</body>
+</html>

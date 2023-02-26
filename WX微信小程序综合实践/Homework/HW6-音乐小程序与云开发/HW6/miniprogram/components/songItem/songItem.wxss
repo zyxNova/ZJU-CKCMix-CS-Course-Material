@@ -1,0 +1,49 @@
+/* components/songItem/songItem.wxss */
+.list-item {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    transition: all 0.3;
+}
+
+.list-item:active {
+    background-color: #f5f5f5;
+}
+
+.content {
+    height: 100rpx;
+    flex: 1;
+    font-size: 25rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name {
+    width: 550rpx;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 30rpx;
+}
+
+.profile {
+    height: 150rpx;
+    width: 150rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    height: 100rpx;
+    width: 100rpx;
+    border-radius: 15rpx;
+}
+
+.favor {
+    width: 60rpx;
+    height: 60rpx;
+    padding-right: 20rpx
+}

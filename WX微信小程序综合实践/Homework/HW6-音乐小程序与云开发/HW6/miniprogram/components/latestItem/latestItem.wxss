@@ -1,0 +1,24 @@
+/* components/latestItem/latestItem.wxss *//* components/broadItem/broadItem.wxss */
+.broad-item {
+    width:320rpx;
+    height:320rpx;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-size: 100% 100%;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    z-index:1;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.broad-text {
+    color:white;
+    display:flex;
+    align-items: center;
+    z-index: 1;
+    font-size: 38rpx;
+}

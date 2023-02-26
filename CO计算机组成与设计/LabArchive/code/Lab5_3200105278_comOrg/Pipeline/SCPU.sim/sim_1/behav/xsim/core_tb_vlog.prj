@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../SCPU.srcs/sources_1/imports/sources_1" \
+"../../../../SCPU.srcs/sources_1/imports/sources_1/Alu.v" \
+"../../../../SCPU.srcs/sources_1/imports/sources_1/Comparator.v" \
+"../../../../SCPU.srcs/sources_1/new/Controller.v" \
+"../../../../SCPU.srcs/sources_1/imports/sources_1/Core.v" \
+"../../../../SCPU.srcs/sources_1/new/DMem.v" \
+"../../../../SCPU.srcs/sources_1/new/IMem.v" \
+"../../../../SCPU.srcs/sources_1/new/ImmGen.v" \
+"../../../../SCPU.srcs/sources_1/imports/sources_1/LEDCtrl.v" \
+"../../../../SCPU.srcs/sources_1/imports/sources_1/MACtrl.v" \
+"../../../../SCPU.srcs/sources_1/imports/sources_1/Mem.v" \
+"../../../../SCPU.srcs/sources_1/imports/sources_1/RegFile.v" \
+"../../../../SCPU.srcs/sim_1/new/core_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

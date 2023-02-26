@@ -1,0 +1,17 @@
+/* components/userItem/userItem.wxss */
+.user-text {
+    font-weight: bold;
+    font-size: 40rpx;
+    margin :15rpx 15rpx;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.user-item {
+    margin :15rpx 15rpx;
+    display: flex;
+    /* flex-direction: column; */
+
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}

@@ -1,0 +1,8 @@
+0.7
+2020.2
+Oct 19 2021
+03:16:22
+D:/OLab/Lab6/Cache/Cache.sim/sim_1/behav/xsim/glbl.v,1634335545,verilog,,,,glbl,,,,,,,,
+D:/OLab/Lab6/Cache/Cache.srcs/sim_1/new/cache_tb.v,1654167997,verilog,,,,cache_tb,,,,,,,,
+D:/OLab/Lab6/Cache/Cache.srcs/sources_1/new/Cache.v,1654168207,verilog,,D:/OLab/Lab6/Cache/Cache.srcs/sources_1/new/DMem.v,,Cache,,,,,,,,
+D:/OLab/Lab6/Cache/Cache.srcs/sources_1/new/DMem.v,1654167850,verilog,,D:/OLab/Lab6/Cache/Cache.srcs/sim_1/new/cache_tb.v,,DMem,,,,,,,,

@@ -1,0 +1,3 @@
+OR32.v,verilog,xil_defaultlib,../../../../ALU.gen/sources_1/ip/OR32_0/src/OR32.v,
+OR32_0.v,verilog,xil_defaultlib,../../../../ALU.gen/sources_1/ip/OR32_0/sim/OR32_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

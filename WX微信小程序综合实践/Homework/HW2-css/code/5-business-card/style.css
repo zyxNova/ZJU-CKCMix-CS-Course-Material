@@ -1,0 +1,109 @@
+.front, .back {
+    box-shadow: 2px 5px 15px 0px rgba(0,0,0,0.25);
+    display: grid;
+    font-family: 'Trebuchet MS', sans-serif;
+    height: 200px;
+    margin: 20px auto;
+    width: 350px;
+    overflow: hidden;
+}
+
+.front {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.front-blue {
+    background-color: #3399CC;
+    grid-column: 8 / span 5;
+    grid-row: 1 / span 4;
+}
+
+.front-yellow {
+    background-color: #FFFF00;
+    grid-column: 1 / span 7;
+    grid-row: 1 / span 4;
+}
+
+.front-red {
+    background-color: #FF6666;
+    clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 11;
+    position: relative;
+    z-index: 2;
+}
+
+
+.personal-intro {
+    background: #777777;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    grid-column: 4 / span 6;
+    grid-row: 2 / span 2;
+    justify-content: center;
+    text-align: center;
+    z-index: 3;
+}
+
+#name, #subtitle {
+    text-transform: uppercase;
+}
+#name {
+    font-size: 18px;
+    
+}
+#subtitle {
+    font-size: 8px;
+    margin-top: 5px;
+}
+
+
+
+
+.back {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.back-yellow {
+    background-color: #FFFF00;
+    grid-column: 1 / span 9;
+    grid-row: 1 / span 3;
+}
+
+.personal-info {
+    grid-column: 2 / span 6;
+    grid-row: 5 / span 6;
+}
+
+#back-name {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 3px;
+    text-transform: uppercase;
+}
+#back-subtitle{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+p {
+    letter-spacing: 1px;
+    font-size: 10px;
+}
+.back-red {
+    background-color: #FF6666;
+    grid-column: 11 / span 2;
+    grid-row: 8 / span 5;
+}
+
+.back-blue {
+    background-color: #3399CC;
+    grid-column: 1 / span 5;
+    grid-row: 11 / span 4;
+}
+
+
+

@@ -1,0 +1,1 @@
+double compute(double, double);

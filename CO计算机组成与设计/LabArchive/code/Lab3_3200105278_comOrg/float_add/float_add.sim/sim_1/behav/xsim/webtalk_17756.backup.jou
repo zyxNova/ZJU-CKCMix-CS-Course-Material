@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Feb 22 18:44:34 2022
+# Process ID: 17756
+# Current directory: D:/dy/计组2022/实验2022.01_V1/Lab03 复杂操作实现/Lab03 复杂操作实现 乘除和浮点加法(学生版）/OExp03/OExp03-float_add/float_add.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/dy/计组2022/实验2022.01_V1/Lab03 复杂操作实现/Lab03 复杂操作实现 乘除和浮点加法(学生版）/OExp03/OExp03-float_add/float_add.sim/sim_1/behav/xsim/xsim.dir/tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/dy/计组2022/实验2022.01_V1/Lab03 复杂操作实现/Lab03 复杂操作实现 乘除和浮点加法(学生版）/OExp03/OExp03-float_add/float_add.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: D:/dy/计组2022/实验2022.01_V1/Lab03 复杂操作实现/Lab03 复杂操作实现 乘除和浮点加法(学生版）/OExp03/OExp03-float_add/float_add.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/dy/计组2022/实验2022.01_V1/Lab03 -notrace

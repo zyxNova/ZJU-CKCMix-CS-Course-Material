@@ -1,0 +1,15 @@
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MUX8T1_tb_behav xil_defaultlib.MUX8T1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 3 for port 's' [D:/OLab/Lab0/MUX8T1/MUX8T1.srcs/sim_1/new/MUX8T1_tb.v:28]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX8T1
+Compiling module xil_defaultlib.MUX8T1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MUX8T1_tb_behav

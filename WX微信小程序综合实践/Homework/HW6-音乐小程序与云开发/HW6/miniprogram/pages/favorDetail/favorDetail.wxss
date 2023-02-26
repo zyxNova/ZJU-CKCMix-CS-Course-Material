@@ -1,0 +1,4 @@
+/* pages/favorDetail/favorDetail.wxss */
+.detail-wrap {
+    padding-top: 10rpx;
+}

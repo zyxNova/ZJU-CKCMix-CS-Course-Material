@@ -1,0 +1,22 @@
+<text>pages/index/index.html</text>
+<view>
+    <text>latitude:{{latitude}}</text>
+</view>
+
+<view>
+    <text>longitude:{{longitude}}</text>
+</view>
+
+<view>
+    <map class="myMap" id="myMap" style="width:100%;height:300px;"
+    longitude="{{longitude}}" latitude="{{latitude}}"
+    markers="{{markers}}" scale="16" show-location show-compass>
+    </map>
+</view>
+
+<view>
+    <button type="primary" bindtap="moveToLocation">移动位置</button>
+    <button type="primary" bindtap="moveBack">重置位置</button>
+</view>
+    
+

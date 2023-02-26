@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<p>{{ books|length }} Titles</p>
+<form method="post" action="/addExcel" enctype="multipart/form-data">
+    Add <strong>.xls(not .xlsx)</strong> File here to batch import books!<br/><br/></br.> <input style = "width:230px" type="file" name="file" value="Add .xls File">
+    <input class="btn" type="submit" name="submit" value="Import">
+</form>
+<ul class="book-list">
+    <table>
+        <thead><th>BookID</th><th colspan="2">Title</th><th>Author</th><th>Price</th><th>Total</th><th>Stock</th><th>Press</th><th>Year</th><th>Type</th>
+        <th>Option</th></thead>
+        <tbody>
+            <tr>
+                <form method="post">
+                    <td><input style="width:30px" type="text" name="id" autocomplete="off"></td>
+                    <td colspan="2"><input style="width:120px" type="text" name="title" autocomplete="off"></td>
+                    <td><input style="width:50px" type="text" name="author" autocomplete="off"></td>
+                    <td><input style="width:50px" type="text" name="price" autocomplete="off"></td>
+                    <td><input style="width:30px" type="text" name="total" value=""></td>
+                    <td><input style="width:30px" type="text" name="stock" value=""></td>
+                    <td><input style="width:30px" type="text" name="press" autocomplete="off"></td>
+                    <td><input style="width:30px" type="text" name="year" autocomplete="off"></td>
+                    <td><input style="width:50px" type="text" name="type" autocomplete="off"></td>
+                    <td><input class="btn" type="submit" name="submit" value="Add"></td>
+                </form>
+            </tr>
+            {% for book in books %}
+            <tr>
+                <td>{{book.id}}</td>
+                <td colspan="2">{{book.title}}</td>
+                <td>{{book.author}}</td>
+                <td>{{book.price}}</td>
+                <td>{{book.total}}</td>
+                <td>{{book.stock}}</td>
+                <td>{{book.press}}</td>
+                <td>{{book.year}}</td>
+                <td>{{book.type}}</td>
+                <td>
+                    <form class="inline-form" method="get" action="{{ url_for('deleteBook', book_id=book.id) }}">
+                        <input class="btn" type="submit" name="delete" value="Delete" onclick="confirm('Are you sure?')">
+                    </form></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</ul>
+{% endblock %}

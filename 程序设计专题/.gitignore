@@ -1,0 +1,4 @@
+acllib/
+report/*.doc*
+report/*/*.doc
+report/*/*.md
